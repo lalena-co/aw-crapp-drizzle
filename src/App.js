@@ -1,16 +1,18 @@
 import React from 'react'
+import Logo from 'components/Logo'
+import Text from 'components/Text'
 import v from 'vudu'
-import logo from 'logo.svg'
+import { styles as s } from 'stylesheet'
 
 const localClasses = v({
   app: {
     textAlign: 'center',
   },
   header: {
-    backgroundColor: '#222',
+    '@composes': [s.bgBlack, s.white],
     height: '150px',
+    marginBottom: '20px',
     padding: '20px',
-    color: 'white',
   },
   logo: {
     animation: 'spin infinite 20s linear',
@@ -25,23 +27,17 @@ const localClasses = v({
       },
     },
   },
-  title: {
-    fontSize: '1.5em',
-  },
-  intro: {
-    fontSize: 'large',
-  },
 })
 
 const App = () => (
   <div className={localClasses.app}>
     <header className={localClasses.header}>
-      <img src={logo} className={localClasses.logo} alt="logo" />
-      <h1 className="App-title">Welcome to React</h1>
+      <Logo className={localClasses.logo} />
+      <Text variant="h1">Welcome to AW-CRApp</Text>
     </header>
-    <p className={localClasses.intro}>
+    <Text>
       To get started, edit <code>src/App.js</code> and save to reload.
-    </p>
+    </Text>
   </div>
 )
 
