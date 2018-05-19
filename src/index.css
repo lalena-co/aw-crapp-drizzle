@@ -1,5 +1,52 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+strong, b, h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+button, input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
