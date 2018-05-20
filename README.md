@@ -1,19 +1,15 @@
-# `aw-crapp`
+# `aw-crapp-drizzle`
 
-A very-opinionated, `deadline-looming-oriented` React starter-kit.
+A fork of [`aw-crapp`](https://github.com/keithpops/aw-crapp) (a React starter-kit), integrated with [`Drizzle`](https://github.com/trufflesuite/drizzle), a Reactive Ethereum datastore for dapp UIs.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ---
 ## Setup
 - Rename `.env.sample` to `.env`
+- `ganache-cli -b 3`
+- Open a new terminal window
 - `yarn install`
+- `truffle compile`
+- `truffle migrate`
 - `yarn start`
-
----
-### Additions
-- [`vudu`](https://github.com/dhunninghake/vudu) in place of CSS.
-- Commonly needed tooling including `redux`, `react-router`, `redux-thunk`, etc.
-- A `stern-but-fair` `eslint` configuration.
-- `/constants` with variables useful for `redux-promise-middleware` and common breakpoints for `vudu` / `react-media`.
-- A generic `Text` component configured to work with `vudu` base copy styles.
