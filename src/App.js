@@ -1,6 +1,9 @@
 import React from 'react'
+import { drizzleConnect } from 'drizzle-react'
+import { LoadingContainer } from 'drizzle-react-components'
 import Logo from 'components/Logo'
 import Text from 'components/Text'
+import DrizzleExamples from 'components/DrizzleExamples'
 import v from 'vudu'
 import { styles as s } from 'stylesheet'
 
@@ -27,18 +30,28 @@ const localClasses = v({
       },
     },
   },
+  intro: {
+    marginBottom: '20px',
+  },
 })
 
-const App = () => (
+const App = props => (
   <div className={localClasses.app}>
     <header className={localClasses.header}>
       <Logo className={localClasses.logo} />
       <Text variant="h1">Welcome to AW-CRApp</Text>
     </header>
-    <Text>
+    <Text classes={localClasses.intro}>
       To get started, edit <code>src/App.js</code> and save to reload.
     </Text>
+    <LoadingContainer>
+      <DrizzleExamples {...props} />
+    </LoadingContainer>
   </div>
 )
 
-export default App
+const mapStateToProps = state => ({
+  ...state,
+})
+
+export default drizzleConnect(App, mapStateToProps)

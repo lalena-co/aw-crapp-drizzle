@@ -1,8 +1,9 @@
 {
-  "name": "aw-crapp",
+  "name": "aw-crapp-drizzle",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eth-block-tracker-es5": "^2.3.2",
     "parameterize": "^0.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -13,8 +14,10 @@
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-promise-middleware": "^5.1.1",
+    "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0",
-    "vudu": "^1.8.10"
+    "vudu": "^1.8.10",
+    "web3": "^1.0.0-beta.34"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,6 +27,9 @@
     "lint": "eslint ./src"
   },
   "devDependencies": {
+    "drizzle": "^1.1.5",
+    "drizzle-react": "^1.1.1",
+    "drizzle-react-components": "^1.1.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -31,6 +37,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.8.2",
-    "prettier": "^1.12.1"
+    "openzeppelin-solidity": "^1.9.0",
+    "prettier": "^1.12.1",
+    "truffle-contract": "^3.0.5"
   }
 }
