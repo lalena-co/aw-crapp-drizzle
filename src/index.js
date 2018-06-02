@@ -24,8 +24,12 @@ import rootSaga from 'rootSaga'
 import createSagaMiddleware from 'redux-saga'
 
 import 'index.css'
+import { injectGlobal } from 'emotion'
+import { tags } from 'stylesheet/copy'
 import App from 'App'
 import registerServiceWorker from 'registerServiceWorker'
+
+injectGlobal(tags)
 
 const history = createHistory()
 const router = routerMiddleware(history)
