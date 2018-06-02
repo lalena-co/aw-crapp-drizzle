@@ -10,7 +10,7 @@ const fonts = {
   },
 }
 
-const copy = {
+export const tags = {
   h1: {
     fontSize: '1.5em',
     ...fonts.sanSerif,
@@ -37,4 +37,8 @@ const copy = {
   },
 }
 
-export default { ...fonts, ...copy }
+/**
+ * Common typeface utilty classes
+ * @typedef {Object} copy
+ */
+export default { ...fonts, ...tags }

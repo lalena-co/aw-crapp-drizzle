@@ -19,8 +19,12 @@ import {
 } from 'react-router-redux'
 
 import 'index.css'
+import { injectGlobal } from 'emotion'
+import { tags } from 'stylesheet/copy'
 import App from 'App'
 import registerServiceWorker from 'registerServiceWorker'
+
+injectGlobal(tags)
 
 const history = createHistory()
 const router = routerMiddleware(history)

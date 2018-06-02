@@ -1,6 +1,6 @@
 # `aw-crapp`
 
-A very-opinionated, `deadline-looming-oriented` React starter-kit.
+A very-opinionated, `looming-deadline-oriented` React starter-kit.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
@@ -12,8 +12,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ---
 ### Additions
-- [`vudu`](https://github.com/dhunninghake/vudu) in place of CSS.
+- [`emotion`](https://emotion.sh/) in place of CSS.
 - Commonly needed tooling including `redux`, `react-router`, `redux-thunk`, etc.
 - A `stern-but-fair` `eslint` configuration.
-- `/constants` with variables useful for `redux-promise-middleware` and common breakpoints for `vudu` / `react-media`.
-- A generic `Text` component configured to work with `vudu` base copy styles.
+- `/constants` with variables useful for `redux-promise-middleware` and common breakpoints for `emotion` / `react-media`.
+- A generic `Text` component if you like those things.
